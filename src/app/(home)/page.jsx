@@ -3,7 +3,7 @@ import Link from "next/link";
 const HomePage = async () => {
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center justify-center bg-[#365A08] text-white">
+      <div className="w-full h-screen flex flex-col items-center justify-center bg-[#1B1D24] text-[#1B1D24]">
         <div className="w-1/2 h-1/2 bg-[#5D9D0B] rounded-2xl shadow-2xl flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold">
             Welcome To My Quiz App
@@ -16,7 +16,7 @@ const HomePage = async () => {
 
           <Link
             href={"/quiz"}
-            className="bg-[#1B1D24] text-white font-bold py-2 px-4 rounded-full mt-7 hover:scale-105 transition-all duration-300"
+            className="bg-[#1B1D24] text-[#72EB3A] font-bold py-2 px-4 rounded-full mt-7 hover:scale-105 transition-all duration-300"
           >
             Documentation
           </Link>
