@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const getLevel = (score) => {
+  if (score == 0) return { level: "Idiot", salary: "You Really Want Salary ???" };
   if (score <= 20) return { level: "Beginner", salary: "$20K-$30K" };
   if (score <= 40) return { level: "Junior", salary: "$30K-$40K" };
   if (score <= 60) return { level: "Mid", salary: "$40K-$60K" };
