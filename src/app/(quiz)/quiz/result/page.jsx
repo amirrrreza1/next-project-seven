@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const getLevel = (score) => {
-  if (score == 0) return { level: "Idiot", salary: "You Really Want Salary ???" };
-  if (score <= 20) return { level: "Beginner", salary: "$20K-$30K" };
-  if (score <= 40) return { level: "Junior", salary: "$30K-$40K" };
-  if (score <= 60) return { level: "Mid", salary: "$40K-$60K" };
-  if (score <= 80) return { level: "Senior", salary: "$60K-$90K" };
-  return { level: "Expert", salary: "$90K+" };
+  if (score == 0)
+    return { level: "Idiot", salary: "You Really Want Salary ???" };
+  if (score <= 12) return { level: "Beginner", salary: "22.6M - 27.2M" };
+  if (score <= 24) return { level: "Junior", salary: "31.8M - 43.9M" };
+  if (score <= 36) return { level: "Mid", salary: "51.7M - 70.2M" };
+  if (score <= 48) return { level: "Senior", salary: "81.4M - 108.8M" };
+  return { level: "Expert", salary: "124.5M - 166.6M" };
 };
 
 const ResultPage = () => {

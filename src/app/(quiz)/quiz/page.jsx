@@ -82,7 +82,7 @@ const DocumentationPage = () => {
                   Score Range
                 </th>
                 <th className="border border-gray-600 px-4 py-2">
-                  Estimated Salary (USD)
+                  Estimated Salary (IRL)
                 </th>
               </tr>
             </thead>
@@ -91,14 +91,14 @@ const DocumentationPage = () => {
                 <td className="border border-gray-600 px-4 py-2">Newbie</td>
                 <td className="border border-gray-600 px-4 py-2">0 - 11</td>
                 <td className="border border-gray-600 px-4 py-2">
-                  $15,000 - $25,000
+                  22.6M - 27.2M
                 </td>
               </tr>
               <tr className="bg-[#2F3D1F]">
                 <td className="border border-gray-600 px-4 py-2">Beginner</td>
                 <td className="border border-gray-600 px-4 py-2">12 - 23</td>
                 <td className="border border-gray-600 px-4 py-2">
-                  $25,000 - $40,000
+                  31.8M - 43.9M
                 </td>
               </tr>
               <tr>
@@ -107,21 +107,21 @@ const DocumentationPage = () => {
                 </td>
                 <td className="border border-gray-600 px-4 py-2">24 - 35</td>
                 <td className="border border-gray-600 px-4 py-2">
-                  $40,000 - $60,000
+                  51.7M - 70.2M
                 </td>
               </tr>
               <tr className="bg-[#2F3D1F]">
                 <td className="border border-gray-600 px-4 py-2">Advanced</td>
                 <td className="border border-gray-600 px-4 py-2">36 - 47</td>
                 <td className="border border-gray-600 px-4 py-2">
-                  $60,000 - $80,000
+                  81.4M - 108.8M
                 </td>
               </tr>
               <tr>
                 <td className="border border-gray-600 px-4 py-2">Expert</td>
                 <td className="border border-gray-600 px-4 py-2">48 - 60</td>
                 <td className="border border-gray-600 px-4 py-2">
-                  $80,000 - $120,000+
+                  124.5M - 166.6M
                 </td>
               </tr>
             </tbody>
