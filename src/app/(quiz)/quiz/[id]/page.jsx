@@ -1,10 +1,13 @@
 import SingleQuestions from "@/Components/SingleQuestions/SingleQuestions";
 
+const BASE_URL = "https://next-project-seven-eta.vercel.app";
+// const BASE_URL = "localhost:3000";
+
 const QuizSinglePage = async ({ params }) => {
   const { id } = await params; // id of the question
 
   const res = await fetch(
-    `https://next-project-seven-eta.vercel.app/api/questions/${id}`
+    `${BASE_URL}/api/questions/${id}`
   );
 
   const data = await res.json();

@@ -91,7 +91,7 @@ const SingleQuestions = ({
       <div className="flex flex-col">
         {options.map((option, index) => (
           <button
-            className={`m-3 p-2 rounded-sm border border-black flex items-center justify-center gap-2 ${getClassName(
+            className={`m-1 p-2 rounded-sm border border-black flex items-center justify-center gap-2 ${getClassName(
               index
             )}`}
             key={`${option}-${index}`}
