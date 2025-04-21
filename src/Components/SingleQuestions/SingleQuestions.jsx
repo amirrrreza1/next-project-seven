@@ -11,7 +11,7 @@ const SingleQuestions = ({
   correctOption,
   totalQuestions,
   score,
-  dificulty,
+  difficulty,
 }) => {
   const router = useRouter();
   const [userAnswer, setUserAnswer] = useState(null);
@@ -51,7 +51,7 @@ const SingleQuestions = ({
   };
 
   const getDifficulty = () => {
-    switch (dificulty) {
+    switch (difficulty) {
       case "Beginner":
         return "bg-[#6BAA0E]";
       case "Intermediate":
@@ -81,7 +81,7 @@ const SingleQuestions = ({
           {id} / {totalQuestions}
         </div>
         <div className={`${getDifficulty()} p-1 rounded-md px-2`}>
-          Difficulty: {dificulty}
+          Difficulty: {difficulty}
         </div>
       </div>
 
