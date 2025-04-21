@@ -1,7 +1,7 @@
 import SingleQuestions from "@/Components/SingleQuestions/SingleQuestions";
 
 const TotalQuestions = async () => {
-  const res = await fetch("http://localhost:3000/api/questions");
+  const res = await fetch("http://localhost:3000/server/questions");
   const data = await res.json();
   const quizQuestions = data.QUESTIONS;
   const totalQuestions = quizQuestions.length;
@@ -11,7 +11,7 @@ const TotalQuestions = async () => {
 const QuizSinglePage = async ({ params }) => {
   const { id } = await params; // id of the question
 
-  const res = await fetch(`http://localhost:3000/api/questions/${id}`);
+  const res = await fetch(`http://localhost:3000/server/questions/${id}`);
   const data = await res.json();
 
   const total = await TotalQuestions(); // total number of questions
